@@ -1,0 +1,22 @@
+body {
+	background-color: #242936;
+}
+a {
+	color: #268BD2;
+}
+.attr-highlight{
+	font-size: 2em;
+	color: #FFFFFF;
+}
+.var-highlight{
+	color: #cc7832;
+}
+.string-highlight{
+	color: #B58900;
+}
+
+/*.typewriterr{*/
+/*		font-size: 4em;*/
+/*		margin: 0;*/
+/*		font-family: "Courier New";*/
+/*}*/
