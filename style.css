@@ -12,9 +12,45 @@ a {
 	color: #cc7832;
 }
 .string-highlight{
-	color: #B58900;
+	color: rgba(251, 193, 23, 0.89);
+}
+.tab {
+	overflow: hidden;
+	background-color: inherit;
 }
 
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 8px 16px;
+	font-size: 17px;
+	color: rgba(238, 238, 238, 0.74);
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	border-bottom: 2px solid #cc7832;
+	color: #eeeeee;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	border-bottom: 2px solid #cc7832;
+	color: #eeeeee;
+}
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+/*Text color on hover*/
 /*.typewriterr{*/
 /*		font-size: 4em;*/
 /*		margin: 0;*/
