@@ -3,62 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Wenjie Mo</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/jquery.jsonview.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="./script/jquery.jsonview.js"></script>
+    <script type="text/javascript" src="./script/utility.js"></script>
 
 </head>
 <body>
 <div class="tab">
-    <button class="tablinks active">About_me.js</button>
-    <button class="tablinks">Projects.md</button>
-    <button class="tablinks">Resume.pdf</button>
-    <button class="tablinks">Contact.txt</button>
+    <button class="tablinks" onclick="openTab(event, 'About_me.json')" id="defaultOpen">About_me.json</button>
+    <button class="tablinks" onclick="openTab(event, 'Projects.md')">Projects.md</button>
+    <button class="tablinks" onclick="openTab(event, 'Resume.pdf')">Resume.pdf</button>
+    <button class="tablinks" onclick="openTab(event, 'Contact.txt')">Contact.txt</button>
 </div>
 
-<pre>
-<span class="attr-highlight">
-<span class="var-highlight">var</span> me = {
-    "Language": [
-        <span class="string-highlight">"English"</span>,
-        <span class="string-highlight">"简体中文"</span>
-    ],
-    "Name": <span class="string-highlight">"Wenjie Mo"</span>,
-    "Education": {
-        "BS": {
-            "School": <span class="string-highlight">"University of California, Los Angeles (UCLA)"</span>,
-            "Major": <span class="string-highlight">"Computer Science"</span>,
-            "Year": <span class="string-highlight">"2019-2023"</span>
-        }
-    },
-    "Work": [
-    {
-         "Company": <span class="string-highlight">"Amazon"</span>,
-         "Job title": <span class="string-highlight">"Incoming Software Dev Engineer Intern"</span>,
-         "Time": <span class="string-highlight">"June 2022 - September 2022"</span>
-    }],
-    "Past Experiences": [
-    {
-         "Company": <span class="string-highlight">"Tencent"</span>,
-         "Job title": <span class="string-highlight">"Software Engineering Intern"</span>,
-         "Time": <span class="string-highlight">"June 2021 - September 2021"</span>
-    },
-    {
-         "Company": <span class="string-highlight">"UCLA Structures-Computer Interaction Laboratory"</span>,
-         "Job title": <span class="string-highlight">"Undergraduate Student Researcher"</span>,
-         "Time": <span class="string-highlight">"July 2020 - Present"</span>
-    }],
-    "Location": [
-        <span class="string-highlight">"Los Angeles, USA"</span>,
-        <span class="string-highlight">"Hangzhou, China"</span>
-    ],
-    "Links": [
-        <span class="string-highlight"> "devwmo [at] gmail.com"</span>,
-        <span class="string-highlight"> <a href="https://github.com/wenjie-mo">"Github"</a></span>,
-        <span class="string-highlight"> <a href="https://www.linkedin.com/in/wenjie-mo">"LinkedIn"</a> </span>
-    ]
-};
-</span>
-</pre>
+<div id="About_me.json" class="tabcontent">
+    <br/> <br/> <br/>
+        <div id="json"></div>
+</div>
 
+<div id="Projects.md" class="tabcontent">
+    <pre>
+        <span class="contact-highlight"> Coming soon! </span>
+    </pre>
+</div>
 
+<div id="Resume.pdf" class="tabcontent">
+    <iframe src="https://drive.google.com/file/d/1nWuOLy4P4dPI4X0Xd_YABOWPfg2uo1GC/preview" width="880" height="840" allow="autoplay"></iframe>
+</div>
+
+<div id="Contact.txt" class="tabcontent">
+    <pre>
+        <span class="contact-highlight"> Email: devwmo [at] gmail.com</span>
+        <span class="contact-highlight"> WeChat: MartinMo666 (Please comment your identity)</span>
+    </pre>
+</div>
+
+<footer>
+    &copy; <em id="date">2022</em> Wenjie Mo
+</footer>
+
+<script>
+    document.getElementById("defaultOpen").click();
+</script>
 </body>
 </html>

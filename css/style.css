@@ -9,6 +9,8 @@ a {
 	color: #FFFFFF;
 }
 .var-highlight{
+	font-family: monospace;
+	font-size: 2em;
 	color: #cc7832;
 }
 .string-highlight{
@@ -18,7 +20,10 @@ a {
 	overflow: hidden;
 	background-color: inherit;
 }
-
+footer {
+	color: #FFFFFF;
+	text-align: center;
+}
 /* Style the buttons inside the tab */
 .tab button {
 	background-color: inherit;
@@ -43,12 +48,27 @@ a {
 	border-bottom: 2px solid #cc7832;
 	color: #eeeeee;
 }
-.tabcontent {
-	display: none;
-	padding: 6px 12px;
-	border: 1px solid #ccc;
-	border-top: none;
+.contact-highlight{
+	font-size: 2em;
+	color: #FFFFFF;
+	font-family: monospace;
 }
+iframe {
+	width: 800px;
+	height: 1000px;
+	margin: 0 auto;
+	background-color: inherit;
+}
+iframe {
+	display: block;
+	border-style:solid;
+}
+/*.tabcontent {*/
+/*	display: none;*/
+/*	padding: 6px 12px;*/
+/*	border: 1px solid #ccc;*/
+/*	border-top: none;*/
+/*}*/
 
 /*Text color on hover*/
 /*.typewriterr{*/
