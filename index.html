@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" prefix="og:http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <title>Wenjie Mo</title>
@@ -10,6 +10,11 @@
     <script type="text/javascript" src="./script/jquery.jsonview.js"></script>
     <script type="text/javascript" src="./script/utility.js"></script>
 
+    <meta property='og:title' content='Wenjie Mo Personal Website'/>
+    <meta property='og:image' content='https://raw.githubusercontent.com/wenjie-mo/wenjie-mo.github.io/main/assets/images/github.jpg'/>
+    <meta property='og:url' content='https://wenjie-mo.github.io'/>
+    <meta name="author" content="Wenjie Mo"/>
+
 </head>
 <body>
 <div class="tab">
@@ -19,8 +24,11 @@
     <button class="tablinks" onclick="openTab(event, 'Contact.txt')">Contact.txt</button>
 </div>
 
+<!-- Image for LinkedIn Preview -->
+<img src="./assets/images/github.jpg" width='0' height='0'/>
+
 <div id="About_me.json" class="tabcontent">
-    <br/> <br/> <br/>
+    <br/> <br/>
         <div id="json"></div>
 </div>
 
