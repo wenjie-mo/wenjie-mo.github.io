@@ -14,7 +14,7 @@ var json = {
     "Work": [
         {
             "Company": "Amazon",
-            "Job title": "Incoming Software Dev Engineer Intern",
+            "Job title": "Software Dev Engineer Intern",
             "Time": "June 2022 - September 2022"
         }],
     "Past Experiences": [

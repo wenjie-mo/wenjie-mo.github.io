@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og:http://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
     <title>Wenjie Mo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Wenjie Mo"/>
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="./css/jquery.jsonview.css"/>
@@ -11,15 +13,15 @@
     <script type="text/javascript" src="./script/utility.js"></script>
 
     <meta property='og:title' content='Wenjie Mo Personal Website'/>
-    <meta property='og:image' content='https://raw.githubusercontent.com/wenjie-mo/wenjie-mo.github.io/main/assets/images/github.jpg'/>
+    <meta property='og:image'
+          content='https://raw.githubusercontent.com/wenjie-mo/wenjie-mo.github.io/main/assets/images/github.jpg'/>
     <meta property='og:url' content='https://wenjie-mo.github.io'/>
-    <meta name="author" content="Wenjie Mo"/>
-
 </head>
+
 <body>
 <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'About_me.json')" id="defaultOpen">About_me.json</button>
-    <button class="tablinks" onclick="openTab(event, 'Projects.md')">Projects.md</button>
+<!--    <button class="tablinks" onclick="openTab(event, 'Projects.md')">Projects.md</button>-->
     <button class="tablinks" onclick="openTab(event, 'Resume.pdf')">Resume.pdf</button>
     <button class="tablinks" onclick="openTab(event, 'Contact.txt')">Contact.txt</button>
 </div>
@@ -29,17 +31,18 @@
 
 <div id="About_me.json" class="tabcontent">
     <br/> <br/>
-        <div id="json"></div>
+    <div id="json"></div>
 </div>
 
-<div id="Projects.md" class="tabcontent">
-    <pre>
-        <span class="contact-highlight"> Coming soon! </span>
-    </pre>
-</div>
+<!--<div id="Projects.md" class="tabcontent">-->
+<!--    <pre>-->
+<!--        <span class="contact-highlight"> Coming soon! </span>-->
+<!--    </pre>-->
+<!--</div>-->
 
 <div id="Resume.pdf" class="tabcontent">
-    <iframe src="https://drive.google.com/file/d/1nWuOLy4P4dPI4X0Xd_YABOWPfg2uo1GC/preview" width="880" height="840" allow="autoplay"></iframe>
+    <iframe src="https://drive.google.com/file/d/1ljDo-Vsv66EpVWD7zCjqW-kXDhL1y9a5/preview" width="880" height="840"
+            allow="autoplay"></iframe>
 </div>
 
 <div id="Contact.txt" class="tabcontent">
@@ -49,9 +52,6 @@
     </pre>
 </div>
 
-<footer>
-    &copy; <em id="date">2022</em> Wenjie Mo
-</footer>
 
 <script>
     document.getElementById("defaultOpen").click();
