@@ -21,38 +21,25 @@
 <body>
 <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'About_me.json')" id="defaultOpen">About_me.json</button>
-<!--    <button class="tablinks" onclick="openTab(event, 'Projects.md')">Projects.md</button>-->
     <button class="tablinks" onclick="openTab(event, 'Resume.pdf')">Resume.pdf</button>
     <button class="tablinks" onclick="openTab(event, 'Contact.txt')">Contact.txt</button>
 </div>
-
-<!-- Image for LinkedIn Preview -->
-<img src="./assets/images/github.jpg" width='0' height='0'/>
-
 <div id="About_me.json" class="tabcontent">
-    <br/> <br/>
     <div id="json"></div>
 </div>
-
-<!--<div id="Projects.md" class="tabcontent">-->
-<!--    <pre>-->
-<!--        <span class="contact-highlight"> Coming soon! </span>-->
-<!--    </pre>-->
-<!--</div>-->
-
 <div id="Resume.pdf" class="tabcontent">
     <iframe src="https://drive.google.com/file/d/1ljDo-Vsv66EpVWD7zCjqW-kXDhL1y9a5/preview" width="880" height="840"
             allow="autoplay"></iframe>
 </div>
-
 <div id="Contact.txt" class="tabcontent">
     <pre>
         <span class="contact-highlight"> Email: devwmo [at] gmail.com</span>
-        <span class="contact-highlight"> WeChat: MartinMo666 (Please comment your identity)</span>
+        <span class="contact-highlight"> WeChat: MartinMo666</span>
     </pre>
 </div>
 
-
+<!-- Image for LinkedIn Preview -->
+<img src="./assets/images/github.jpg" width='0' height='0'/>
 <script>
     document.getElementById("defaultOpen").click();
 </script>

@@ -1,32 +1,42 @@
-var json = {
-    "Language": [
-        "English",
-        "简体中文"
-    ],
+const json = {
     "Name": "Wenjie Mo",
     "Education": {
         "BS": {
-            "School": "University of California, Los Angeles (UCLA)",
+            "School": "University of California, Los Angeles",
             "Major": "Computer Science",
             "Year": "2019-2023"
         }
     },
-    "Work": [
+    "Industry Experiences": [
         {
             "Company": "Amazon",
             "Job title": "Software Dev Engineer Intern",
             "Time": "June 2022 - September 2022"
-        }],
-    "Past Experiences": [
+        },
         {
             "Company": "Tencent",
             "Job title": "Software Engineering Intern",
             "Time": "June 2021 - September 2021"
+        }
+        ],
+    "Research Experiences": [
+        {
+            "Lab": "UCLA Zhou Lab",
+            "Concentration": "Reinforcement Learning",
+            "Advisor": "Professor Bolei Zhou",
+            "Time": "March 2021 - Present"
+        },
+        {
+            "Lab": "UCLA Vision Lab",
+            "Concentration": "Computer Vision",
+            "Advisor": "Professor Stefano Soatto",
+            "Time": "March 2021 - January 2023"
         },
         {
             "Company": "UCLA Structures-Computer Interaction Laboratory",
-            "Job title": "Undergraduate Student Researcher",
-            "Time": "July 2020 - Present"
+            "Concentration": "Robotics",
+            "Advisor": "Professor M. Khalid Jawed",
+            "Time": "July 2020 - March 2022"
         }],
     "Location": [
         "Los Angeles, USA",
