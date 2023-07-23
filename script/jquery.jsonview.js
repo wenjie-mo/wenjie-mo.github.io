@@ -244,7 +244,6 @@ Licensed under the MIT License.
   $ = jQuery;
   JSONView = {
     collapse: function(el) {
-      console.log('hehe');
       if (el.innerHTML === '-') {
         return Collapser.collapse(el);
       }

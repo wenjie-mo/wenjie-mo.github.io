@@ -1,43 +1,50 @@
 const json = {
     "Name": "Wenjie Mo",
     "Education": {
+        "MS": {
+            "School": "University of California, Los Angeles (UCLA)",
+            "Major": "Computer Science",
+            "Year": "2023-2024"
+        },
         "BS": {
-            "School": "University of California, Los Angeles",
+            "School": "University of California, Los Angeles (UCLA)",
             "Major": "Computer Science",
             "Year": "2019-2023"
         }
     },
-    "Industry Experiences": [
-        {
-            "Company": "Amazon",
-            "Job title": "Software Dev Engineer Intern",
-            "Time": "June 2022 - September 2022"
+    "Industry Experiences": {
+        "ZipRecruiter": {
+            "Title": "Software Engineer Intern",
+            "Time": "May 2023 - August 2023",
+            "Team": "Messaging Team"
         },
-        {
-            "Company": "Tencent",
-            "Job title": "Software Engineering Intern",
-            "Time": "June 2021 - September 2021"
+        "Amazon": {
+            "Title": "Software Development Engineer Intern",
+            "Time": "June 2022 - September 2022",
+            "Team": "ReCommerce AfterMarketplace team"
+        },
+        "Tencent": {
+            "Job title": "Software Engineer Intern",
+            "Time": "June 2021 - September 2021",
+            "Team": "Android QQ team"
         }
-        ],
-    "Research Experiences": [
-        {
-            "Lab": "UCLA Zhou Lab",
+    },
+    "Research Experiences": {
+        "UCLA Zhou Lab":{
             "Concentration": "Reinforcement Learning",
             "Advisor": "Professor Bolei Zhou",
             "Time": "March 2021 - Present"
         },
-        {
-            "Lab": "UCLA Vision Lab",
+        "UCLA Vision Lab": {
             "Concentration": "Computer Vision",
             "Advisor": "Professor Stefano Soatto",
             "Time": "March 2021 - January 2023"
         },
-        {
-            "Company": "UCLA Structures-Computer Interaction Laboratory",
+        "UCLA Structures-Computer Interaction Laboratory": {
             "Concentration": "Robotics",
             "Advisor": "Professor M. Khalid Jawed",
             "Time": "July 2020 - March 2022"
-        }],
+        }},
     "Location": [
         "Los Angeles, USA",
         "Hangzhou, China"
@@ -45,14 +52,20 @@ const json = {
     "Links": [
         "https://github.com/wenjie-mo$Github",
         "https://www.linkedin.com/in/wenjie-mo$Linkedin",
+        "https://scholar.google.com/citations?user=Q_F174kAAAAJ$Google_Scholar",
     ]
 };
 
 $(function() {
     $("#json").JSONView(json);
+    $('#json').JSONView('toggle', 2);
 
-    $("#json-collapsed").JSONView(json, { collapsed: true, nl2br: true, recursive_collapser: true });
+    jsonContent = document.getElementsByClassName("obj level1 collapsible");
+    for (i = 0; i < jsonContent.length; i++) {
+        var item = jsonContent[i].childNodes[0].getElementsByClassName("collapser");
+        item[0].click();
 
+    }
     $('#collapse-btn').on('click', function() {
         $('#json').JSONView('collapse');
     });
