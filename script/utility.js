@@ -61,8 +61,8 @@ $(function() {
     $('#json').JSONView('toggle', 2);
 
     jsonContent = document.getElementsByClassName("obj level1 collapsible");
-    for (let i = 0; i < jsonContent.length; i++) {
-        const item = jsonContent[i].childNodes[0].getElementsByClassName("collapser");
+    for (i = 0; i < jsonContent.length; i++) {
+        var item = jsonContent[i].childNodes[0].getElementsByClassName("collapser");
         item[0].click();
 
     }
