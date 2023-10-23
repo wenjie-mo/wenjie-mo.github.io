@@ -14,6 +14,11 @@ const json = {
     },
     "Industry Experiences": {
         "ZipRecruiter": {
+            "Title": "Software Engineer III",
+            "Time": "September 2023 - Present",
+            "Team": "Messaging Team"
+        },
+        "ZipRecruiter": {
             "Title": "Software Engineer Intern",
             "Time": "May 2023 - August 2023",
             "Team": "Messaging Team"
@@ -29,22 +34,6 @@ const json = {
             "Team": "Android QQ team"
         }
     },
-    "Research Experiences": {
-        "UCLA Zhou Lab":{
-            "Concentration": "Reinforcement Learning",
-            "Advisor": "Professor Bolei Zhou",
-            "Time": "March 2021 - Present"
-        },
-        "UCLA Vision Lab": {
-            "Concentration": "Computer Vision",
-            "Advisor": "Professor Stefano Soatto",
-            "Time": "March 2021 - January 2023"
-        },
-        "UCLA Structures-Computer Interaction Laboratory": {
-            "Concentration": "Robotics",
-            "Advisor": "Professor M. Khalid Jawed",
-            "Time": "July 2020 - March 2022"
-        }},
     "Location": [
         "Los Angeles, USA",
         "Hangzhou, China"
